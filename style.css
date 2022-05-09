@@ -1,0 +1,93 @@
+body {
+  background-color: #333;
+}
+
+h1 {
+  color: aquamarine;
+  text-align: center;
+}
+
+.textarea {
+  display: block;
+  width: 50%;
+  height: fit-content;
+  background-color: rgb(100, 117, 91);
+  margin: 0 auto 100px auto;
+  border: #333;
+  border-radius: 5px;
+}
+.textarea:focus {
+  outline: none !important;
+}
+
+.eng_lab {
+  display: block;
+  color: white;
+  margin-bottom: 45px;
+}
+
+.KB_WRAPPER {
+  width: 1020px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  height: fit-content;
+}
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border: 3px solid rgb(80, 70, 70);
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.btn.active {
+  background-color: #333;
+  color: #fff;
+}
+
+@keyframes btn_anim {
+  0% {
+    background-color: #333;
+    color: #fff;
+  }
+  100% {
+    background-color: #fff;
+    color: #333;
+  }
+}
+.fnbackspace {
+  font-weight: bold;
+  width: 150px;
+}
+
+.fntab {
+  width: 80px;
+}
+
+.fndelete {
+  width: 75px;
+}
+
+.fncapslock {
+  width: 110px;
+}
+
+.fnenter {
+  width: 165px;
+}
+
+.fnshift {
+  width: 105px;
+}
+
+.fnspace {
+  width: 386px;
+}
+
+/*# sourceMappingURL=style.css.map */
