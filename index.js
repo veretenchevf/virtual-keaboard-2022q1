@@ -1,5 +1,5 @@
 const HEADER = document.createElement('h1');
-HEADER.innerHTML = 'Разоработано для Windows';
+HEADER.innerHTML = 'DESIGNED FOR Windows';
 const TXT_AREA = document.createElement('textarea');
 TXT_AREA.classList.add('textarea');
 TXT_AREA.autofocus = true;
@@ -9,7 +9,7 @@ KB_WRAPPER.classList.add('KB_WRAPPER');
 
 const ENG_LAB = document.createElement('label');
 ENG_LAB.classList.add('eng_lab');
-ENG_LAB.innerText = 'Language switcher (Alt + Shift) EN / RU';
+ENG_LAB.innerText = 'EN / RU';
 
 const ENG = document.createElement('input');
 ENG.classList.add('eng');
@@ -25,7 +25,7 @@ BODY.appendChild(KB_WRAPPER);
 
 let eng = ENG.checked;
 
-const KEYS = [['`', 'Backquote', 'ё', '~'], ['1', 'Digit1', '!', '!', 'num'], ['2', 'Digit2', '"', '@', 'num'], ['3', 'Digit3', '№', '#', 'num'], ['4', 'Digit4', ';', '$', 'num'], ['5', 'Digit5', '%', '%', 'num'], ['6', 'Digit6', ':', '^', 'num'], ['7', 'Digit7', '?', '&', 'num'], ['8', 'Digit8', '*', '*', 'num'], ['9', 'Digit9', '(', '(', 'num'], ['0', 'Digit0', ')', ')', 'num'], ['-', 'Minus', '_', '_', 'num'], ['=', 'Equal', '+', '+', 'num'], ['Backspace', 'Backspace', 'Backspace', '', 'fnbackspace'], ['Tab', 'Tab', 'Tab', '', 'fntab'], ['q', 'KeyQ', 'й'], ['w', 'KeyW', 'ц'], ['e', 'KeyE', 'у'], ['r', 'KeyR', 'к'], ['t', 'KeyT', 'е'], ['y', 'KeyY', 'н'], ['u', 'KeyU', 'г'], ['i', 'KeyI', 'ш'], ['o', 'KeyO', 'щ'], ['p', 'KeyP', 'з'], ['[', 'BracketLeft', 'х', '{'], [']', 'BracketRight', 'ъ', '}'], ['\\', 'Backslash', '', '/'], ['Delete', 'Delete', 'Delete', '', 'fndelete'], ['CapsLock', 'CapsLock', 'CapsLock', 'CapsLock', 'fncapslock'], ['a', 'KeyA', 'ф'], ['s', 'KeyS', 'ы'], ['d', 'KeyD', 'в'], ['f', 'KeyF', 'а'], ['g', 'KeyG', 'п'], ['h', 'KeyH', 'р'], ['j', 'KeyJ', 'о'], ['k', 'KeyK', 'л'], ['l', 'KeyL', 'д'], [';', 'Semicolon', 'ж'], ["'", 'Quote', 'э'], ['Enter', 'Enter', 'Enter', 'Enter', 'fnenter'], ['Shift', 'ShiftLeft', 'Shift', 'Shift', 'fnshift'], ['z', 'KeyZ', 'я'], ['x', 'KeyX', 'ч'], ['c', 'KeyC', 'с'], ['v', 'KeyV', 'м'], ['b', 'KeyB', 'и'], ['b', 'KeyB', 'и'], ['n', 'KeyN', 'т'], ['m', 'KeyM', 'ь'], [',', 'Comma', 'б'], ['.', 'Period', 'ю'], ['/', 'Slash', '/', '/'], ['Up', 'ArrowUp', 'Up', 'ArrowUp', 'fnarrow'], ['Shift', 'ShiftRight', 'Shift', 'Shift', 'fnshift'], ['Ctrl', 'ControlLeft', 'Ctrl', 'Ctrl', 'fnctrl'], ['Win', 'MetaLeft', 'Win', 'Win', 'fnwin'], ['Alt', 'AltLeft', 'Alt', 'Alt', 'fnalt'], [' ', 'Space', ' ', ' ', 'fnspace'], ['Alt', 'AltRight', 'Alt', 'Alt', 'fnalt'], ['Ctrl', 'ControlRight', 'Ctrl', 'Ctrl', 'fnctrl'], ['Left', 'ArrowLeft', 'Left', 'Left', 'fnarrow'], ['Down', 'ArrowDown', 'Down', 'Down', 'fnarrow'], ['Right', 'ArrowRight', 'Right', 'Right', 'fnarrow']];
+const KEYS = [['`', 'Backquote', 'ё', '~'], ['1', 'Digit1', '!', '!', 'num'], ['2', 'Digit2', '"', '@', 'num'], ['3', 'Digit3', '№', '#', 'num'], ['4', 'Digit4', ';', '$', 'num'], ['5', 'Digit5', '%', '%', 'num'], ['6', 'Digit6', ':', '^', 'num'], ['7', 'Digit7', '?', '&', 'num'], ['8', 'Digit8', '*', '*', 'num'], ['9', 'Digit9', '(', '(', 'num'], ['0', 'Digit0', ')', ')', 'num'], ['-', 'Minus', '_', '_', 'num'], ['=', 'Equal', '+', '+', 'num'], ['Backspace', 'Backspace', 'Backspace', '', 'fnbackspace'], ['Tab', 'Tab', 'Tab', '', 'fntab'], ['q', 'KeyQ', 'й'], ['w', 'KeyW', 'ц'], ['e', 'KeyE', 'у'], ['r', 'KeyR', 'к'], ['t', 'KeyT', 'е'], ['y', 'KeyY', 'н'], ['u', 'KeyU', 'г'], ['i', 'KeyI', 'ш'], ['o', 'KeyO', 'щ'], ['p', 'KeyP', 'з'], ['[', 'BracketLeft', 'х', '{'], [']', 'BracketRight', 'ъ', '}'], ['\\', 'Backslash', '', '/'], ['Delete', 'Delete', 'Delete', '', 'fndelete'], ['CapsLock', 'CapsLock', 'CapsLock', 'CapsLock', 'fncapslock'], ['a', 'KeyA', 'ф'], ['s', 'KeyS', 'ы'], ['d', 'KeyD', 'в'], ['f', 'KeyF', 'а'], ['g', 'KeyG', 'п'], ['h', 'KeyH', 'р'], ['j', 'KeyJ', 'о'], ['k', 'KeyK', 'л'], ['l', 'KeyL', 'д'], [';', 'Semicolon', 'ж'], ["'", 'Quote', 'э'], ['Enter', 'Enter', 'Enter', 'Enter', 'fnenter'], ['Shift', 'ShiftLeft', 'Shift', 'Shift', 'fnshift'], ['z', 'KeyZ', 'я'], ['x', 'KeyX', 'ч'], ['c', 'KeyC', 'с'], ['v', 'KeyV', 'м'], ['b', 'KeyB', 'и'], ['b', 'KeyB', 'и'], ['n', 'KeyN', 'т'], ['m', 'KeyM', 'ь'], [',', 'Comma', 'б'], ['.', 'Period', 'ю'], ['/', 'Slash', '/', '/'], ['Up', 'ArrowUp', 'Up', 'ArrowUp', 'fnarrow'], ['Shift', 'ShiftRight', 'Shift', 'Shift', 'fnshift'], ['Ctrl', 'ControlLeft', 'Ctrl', 'Ctrl', 'fnctrl'], ['Win', 'MetaLeft', 'Win', 'Win', 'fnwin'], ['Alt', 'AltLeft', 'Alt', 'Alt', 'fnalt'], [' ', 'Space', ' ', ' ', 'fnspace'], ['Alt', 'AltRight', 'Alt', 'Alt', 'fnalt'], ['Ctrl', 'ControlRight', 'Ctrl', 'Ctrl', 'fnctrl'], ['Left', 'ArrowLeft', 'Left', 'Left', 'fnarrow'], ['Down', 'ArrowDown', 'Down', 'Down', 'fnarrow'], ['Rght', 'ArrowRight', 'Rght', 'Right', 'fnarrow']];
 
 const Key = class Key {
   constructor(key, code, rus, symbol, attr) {
@@ -138,7 +138,7 @@ function createBUTTON(letter) {
   }
   if (letter.attr === 'fntab') {
     btn.addEventListener('click', () => {
-      TXT_AREA.value += '    ';
+      TXT_AREA.value += '   ';
     });
   }
   KB_WRAPPER.appendChild(btn);
