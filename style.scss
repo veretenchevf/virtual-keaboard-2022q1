@@ -1,23 +1,29 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+}
+
 body{
-    background-color: #333;
+    background-color: #264653;
 }
 h1{
-    color: aquamarine;
+    color: #f4a261;
     text-align: center;
 }
 .textarea{
     display: block;
     width: 50%;
-    height: fit-content;
-    background-color: rgb(100, 117, 91);
-    margin: 0 auto 100px auto;
-    border: #333;
+    min-height: 200px;
+    max-height: 30%;
+    background-color: #2a9d8f;
+    margin: 0 auto 50px auto;
+    border: 2px solid #333;
     border-radius: 5px;
     &:focus{
         outline: none !important;
     }
 }   
 .eng_lab{
+    font-size: 10px;
     display: block;
     color: white;
     margin-bottom: 45px;
@@ -43,7 +49,7 @@ h1{
 }
 .btn.active{
     background-color: #333;
-    color: #fff;
+    color: #e76f51;
 }
 @keyframes btn_anim {
     0% {
@@ -57,24 +63,28 @@ h1{
 }
 .fnbackspace{
     font-weight: bold;
+    font-size: 10px;
     width: 150px;
 }
-.fntab{
+.fntab{font-size: 10px;
 width: 80px;
 }
-.fndelete{
+.fndelete{font-size: 10px;
     width: 75px;
 }
 
-.fncapslock{
+.fncapslock{font-size: 10px;
     width: 110px;
 }
-.fnenter{
+.fnenter{font-size: 10px;
     width: 165px;
 }
-.fnshift{
+.fnshift{font-size: 10px;
     width: 105px;
 }
-.fnspace{
+.fnspace{ 
     width: 386px;
+}
+.fnarrow, .fnalt, .fnwin, .fnctrl{
+    font-size: 10px;
 }
